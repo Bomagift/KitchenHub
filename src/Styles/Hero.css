@@ -1,0 +1,41 @@
+.banner {
+    background-image: url('Images/Hero Section.png');
+    background-size: cover;
+    background-position: center;
+    color: #3333;
+    padding: 10em 5em;
+}
+
+
+.banner h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: rgb(33, 31, 31);
+    max-width: 600px;
+}
+
+.banner h6{
+    font-size: 25px;
+    color: #00CADD;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    color: grey;
+}
+
+.shop-now {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.shop-now:hover {
+    background-color: #0088cc;
+}

@@ -1,0 +1,60 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: left;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.company-info{
+    margin-left: 5em;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.footer p,
+.footer ul,
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.payment-methods img,
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-top: 1em;
+}
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+}
