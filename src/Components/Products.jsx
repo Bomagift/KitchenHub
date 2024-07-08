@@ -1,6 +1,6 @@
 import ProductData from "../Pages/ProductData";
 import "../Styles/Products.css";
-
+import { useNavigate } from "react-router-dom";
 const Products = () => {
   const newArrivals = ProductData.filter(
     (product) => product.category === "New Arrivals"
@@ -8,6 +8,12 @@ const Products = () => {
   const featuredProducts = ProductData.filter(
     (product) => product.category === "Featured Products"
   );
+  const navigate = useNavigate();
+
+  const handleCart = () => {
+    navigate("/cart");
+  };
+
   return (
     <div className="products">
       <h2>New Arrivals</h2>
@@ -23,8 +29,12 @@ const Products = () => {
               <img src="Images/Group 198.png" alt="" />
             </div>
             <div className="add-to-cart">
-              <span>Add to Cart</span>
-              <img src="Images/lets-icons_add-light.png" alt="" />
+              <span onClick={handleCart}>Add to Cart</span>
+              <img
+                src="Images/lets-icons_add-light.png"
+                alt=""
+                onClick={handleCart}
+              />
             </div>
             <h3>{product.name}</h3>
             <p>{product.price}</p>
@@ -41,8 +51,8 @@ const Products = () => {
               <img src="Images/Group 198.png" alt="" />
             </div>
             <div className="add-to-cart">
-              <span>Add to Cart</span>
-              <img src="Images/lets-icons_add-light.png" alt="" />
+              <span onClick={handleCart}>Add to Cart</span>
+              <img src="Images/lets-icons_add-light.png" alt="" onClick={handleCart}/>
             </div>
             <h3>{product.name}</h3>
             <p>{product.price}</p>
