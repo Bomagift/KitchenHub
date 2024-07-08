@@ -6,10 +6,12 @@ import Features from "../Components/Features"
 import Products from "../Components/Products"
 import Newsletter from "../Components/Newsletter"
 import Footer from "../Components/Footer"
+import MobileHeader from "../Components/MobileHeader"
 function LandingPage() {
   return (
     <div>
         <Header/>
+        <MobileHeader/>
         <Navbar/>
         <Hero/>
         <Features/>

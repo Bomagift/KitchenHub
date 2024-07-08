@@ -47,14 +47,19 @@
   background-color: #007acc; 
   color: #fff;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .newsletter form {
-    flex-direction: column;
+    display: none;
+    flex-direction: row;
     gap: 10px;
+    width: 200px;
+  background-color: #E0E0E0;
+  border-radius: 15px;
+  border: none;
   }
   .newsletter input,
   .newsletter button {
-    width: 100%;
-    max-width: none;
+    width: 10px;
+    display: none;
   }
 }

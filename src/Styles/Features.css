@@ -22,3 +22,9 @@
   color: #666;
   max-width: 1000px;
 }
+@media (max-width: 768px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
+}

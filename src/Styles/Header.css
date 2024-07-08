@@ -28,6 +28,36 @@ header {
     overflow: hidden;
     background-color: #fff;
 }
+.header1{
+    display: none;
+    background-color: #c0c0c0;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ddd;  
+}
+
+.header-top1{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.logo1 a{
+    font-size: 15px;
+    font-weight: bold;
+    color: #f7f7f7;
+    text-decoration: none;
+    margin-left: 3em;
+}
+.bar{
+    gap: 2em;
+
+}
+
+.bar img{
+    width: 20px;
+    height: 20px;
+}
 
 .search-bar input {
     border: none;
@@ -54,3 +84,33 @@ header {
     height: 100%;
 }
 
+@media (max-width: 768px) {
+    .header-top1 {
+      display: flex;
+      justify-content: space-between;
+    align-items: center;
+    margin-top: 1em; 
+    }
+  
+    .header1{
+        display: flex;
+    }
+
+    header{
+        display: none;
+    }
+    .bar{
+        margin-left: 10em;
+        
+    
+    }
+    
+    .bar img{
+        gap: 2em;
+        width: 20px;
+        height: 20px;
+        
+    }
+
+  }
+  

@@ -13,6 +13,7 @@ function Navbar() {
                         <a href="/categories"  className="shop">Shop by Categories</a>
                         <img src="public/Images/Polygon 2.png" alt="" />
                     </li>
+                    
                     {categoriesVisible && (
                         <div className="dropdown large-dropdown">
                             <div className="dropdown-section">

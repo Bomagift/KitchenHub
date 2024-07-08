@@ -9,7 +9,7 @@ function Hero() {
         "Elevate your culinary space. Embrace innovative kitchenware that defines
         cutting-edge style."
       </p>
-     
+     <button className="shop-now">Shop now</button>
     </div>
   );
 }
