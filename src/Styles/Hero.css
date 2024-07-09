@@ -51,6 +51,9 @@
 @media (max-width: 768px) {
   .banner {
     display: flex;
+    background-image: url("/Images/Hero Section.png");
+    background-size: cover;
+    background-position: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
