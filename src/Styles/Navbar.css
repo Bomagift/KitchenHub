@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
- background: linear-gradient(to left, #00cadd, #006d77);
+  background: linear-gradient(to left, #00cadd, #006d77);
   padding: 1em;
 }
-.shop{
+
+.shop {
   margin-left: 1.8em;
 }
-
 
 .header-bottom ul {
   list-style: none;
@@ -18,13 +18,26 @@
   margin: 0;
 }
 
-.nav-links {
+.nav-links-desktop,
+.auth-links-desktop {
   display: flex;
   justify-content: space-between;
   gap: 2em;
   margin-left: 10em;
+  color: #fff;
 }
 
+.nav-links-desktop ul {
+  list-style: none;
+}
+
+.nav-links-desktop li {
+  list-style: none;
+}
+
+.nav-links-desktop a {
+  text-decoration: none;
+}
 .line {
   width: 50px;
   height: 5px;
@@ -39,14 +52,14 @@
   background-color: orange;
 }
 
-.header-bottom ul li a {
+.header-bottom a {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
   padding: 5px 10px;
 }
 
-.header-bottom ul li a:hover {
+.header-bottom a:hover {
   color: orange;
 }
 
@@ -55,13 +68,13 @@ img {
   height: 8px;
 }
 
-.auth-links a {
+.auth-links a,
+.auth-links-desktop a {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
   font-weight: lighter;
 }
-
 
 .menu {
   display: flex;
@@ -109,7 +122,7 @@ img {
   width: 100px;
 }
 
-.small-dropdown ul{
+.small-dropdown ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,7 +156,6 @@ img {
   font-size: 14px;
   color: #555;
   border: none;
-  
 }
 
 .dropdown-section li:hover {
@@ -156,15 +168,14 @@ img {
   border-radius: 15px;
 }
 
-
 .hamburger-menu {
-  display: none; 
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
   height: 20px;
   cursor: pointer;
-  z-index: 1001; 
+  z-index: 1001;
 }
 
 .hamburger-menu div {
@@ -173,7 +184,6 @@ img {
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
-
 
 .menu-open .hamburger-menu div:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
@@ -186,7 +196,6 @@ img {
 .menu-open .hamburger-menu div:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
 
 .overlay-menu {
   position: fixed;
@@ -230,15 +239,21 @@ img {
   color: orange;
 }
 
-
 @media (max-width: 768px) {
-  .hamburger-menu {
-    display: flex; 
+  .nav-links-desktop,
+  .auth-links-desktop {
+    display: none;
   }
-.nav-links{
-  display: none;
-}
-.shop{
- margin-left: 0;
-}
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .large-dropdown {
+    display: none;
+  }
+
+  .small-dropdown {
+    display: none;
+  }
 }

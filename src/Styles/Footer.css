@@ -53,6 +53,7 @@
   display: inline-block;
   margin-right: 10px;
 }
+
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -61,5 +62,8 @@
   }
   .company-info{
     margin-left: 0;
+}
+.contact ul{
+  display: none;
 }
 }
