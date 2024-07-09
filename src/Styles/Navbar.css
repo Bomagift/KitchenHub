@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #009caa;
+ background: linear-gradient(to left, #00cadd, #006d77);
   padding: 1em;
 }
 .shop{

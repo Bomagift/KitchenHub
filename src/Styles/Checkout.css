@@ -50,7 +50,19 @@
   margin-top: 3em;
 
 }
-
+.method1{
+  margin: 0 10px;
+}
+.method1 input{
+  margin-top: 3em;
+  
+}
+.method1 img{
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
 .method img {
   width: 60px;
   height: auto;
@@ -133,7 +145,7 @@ padding: 10px;
 .confirm-button {
   width: 100%;
   padding: 15px;
-  background-color: #00A4B3;
+  background: linear-gradient(to left, #00cadd, #006d77);
   border: none;
   border-radius: 4px;
   color: #fff;

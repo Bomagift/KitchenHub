@@ -70,7 +70,7 @@
 }
 .checkout-btn {
   padding: 10px 20px;
-  background-color: #00aaff;
+  background: linear-gradient(to left, #00cadd, #006d77);
   color: white;
   border: none;
   border-radius: 4px;
@@ -81,7 +81,7 @@
     display: none;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .cart-item {
     flex-direction: column;

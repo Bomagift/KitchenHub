@@ -90,7 +90,6 @@ header {
     .header-top1 {
       display: flex;
       justify-content: space-between;
-    align-items: center;
     margin-top: 1em; 
     }
   
@@ -102,7 +101,7 @@ header {
         display: none;
     }
     .bar{
-        margin-left: 10em;
+        margin-left: 13em;
         
     
     }

@@ -19,11 +19,7 @@ const Checkout = () => {
       <div className="paycart">
         <div className="payment-methods">
           <h3>Choose your payment method</h3>
-          <div className="payment-steps">
-            <p className="step active"><span>1</span> Cart</p>
-            <p className="step active"><span> 2 </span>Shipping</p>
-            <p className="step active"><span>3 </span>Payment</p>
-          </div>
+
 
           <div className="methods">
             <label className="method">
@@ -39,7 +35,7 @@ const Checkout = () => {
                 alt="Visa"
               />
             </label>
-            <label className="method">
+            <label className="method1">
               <input
                 type="radio"
                 name="payment"

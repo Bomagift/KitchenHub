@@ -1,7 +1,7 @@
 .newsletter {
   text-align: center;
   padding: 40px;
-  background-color: #1d8a93;
+  background: linear-gradient(to left, #00cadd, #006d77);
   color: #fff;
 }
 .newsletter h2 {
@@ -13,8 +13,8 @@
   margin-bottom: 30px;
 }
 .newsletter form {
-  flex-wrap: wrap; 
-  background-color: #E0E0E0;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
   max-width: 500px;
   margin-left: 25em;
   border-radius: 15px;
@@ -27,39 +27,38 @@
   font-size: 16px;
   border: none;
   border-radius: 15px;
-  flex: 1 1 auto; 
-  background-color: #E0E0E0;
+  flex: 1 1 auto;
+  background-color: #e0e0e0;
   margin-right: 12em;
-  
-  
 }
 .newsletter button {
   padding: 10px 20px;
   font-size: 10px;
   border: none;
   border-radius: 15px;
-  background-color: #FF6B6B;
+  background-color: #ff6b6b;
   color: black;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 .newsletter button:hover {
-  background-color: #007acc; 
+  background-color: #007acc;
   color: #fff;
 }
 @media (max-width: 768px) {
   .newsletter form {
     display: none;
-    flex-direction: row;
-    gap: 10px;
-    width: 200px;
-  background-color: #E0E0E0;
-  border-radius: 15px;
-  border: none;
+    max-width: 200px;
+    margin-left: 2em;
+    align-items: center;
   }
-  .newsletter input,
-  .newsletter button {
-    width: 10px;
-    display: none;
+  .newsletter input{
+    padding: 0.1em;
+  
+  }
+
+  .newsletter button{
+    padding: 1em;
+    margin-left: 2em;
   }
 }

@@ -26,7 +26,7 @@
 }
 
 .shop-now {
-  background-color: #00aaff;
+  background: linear-gradient(to left, #00cadd, #006d77);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -59,6 +59,7 @@
     align-items: center;
     color: #3333;
     padding: 5em 4em;
+
   }
   .banner h1 {
     font-size: 35px;
