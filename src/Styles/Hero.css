@@ -1,7 +1,7 @@
 .banner {
   background-image: url("/Images/Hero Section.png");
   background-size: cover;
-  background-position: left;
+  background-position: center;
   color: #3333;
   padding: 10em 5em;
 }
