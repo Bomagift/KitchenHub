@@ -1,11 +1,11 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import "../Styles/Cart.css";
 
 const Cart = () => {
   const items = [
     {
       id: 1,
-      image:"Images/pngwing.com (25) 1.png" ,
+      image: "Images/pngwing.com (25) 1.png",
       name: "Juice Mixer",
       buyer: "Mary Brenden",
       brand: "Sencor",
@@ -27,39 +27,65 @@ const Cart = () => {
     0
   );
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleCheckout = () => {
-    navigate('/checkout'); 
+    navigate("/checkout");
   };
 
   return (
-    <div className="cart-summary">
-      <h2>Cart Summary</h2>
-      <div className="cart-items">
-        {items.map((item) => (
-          <div className="cart-item" key={item.id}>
-            <img src={item.image} alt={item.name} />
-            <div className="item-details">
-              <h3>Name of Product: {item.name}</h3>
-              <p>Buyer's Name: {item.buyer}</p>
-              <p>Brand: {item.brand}</p>
-              <p>Price: ${item.price.toFixed(2)}</p>
-              <div className="item-actions">
-                <button className="quantity-btn">-</button>
-                <span>{item.quantity}</span>
-                <button className="quantity-btn">+</button>
-                <button className="delete-btn">Delete</button>
+    <>
+      <div className="cart-summary">
+        <div className="breadcrumb1">
+          <span>&gt;</span> CART SUMMARY
+        </div>
+
+        <div className="cart-totals">
+          <p>Total:</p>
+          <p>$270.00</p>
+        </div>
+        <p className="delivery">delivery</p>
+
+        <div className="cart-items">
+          {items.map((item) => (
+            <>
+              <div className="carts">
+                <div className="cart-item" key={item.id}>
+                  <img className="iTem" src={item.image} alt={item.name} />
+                  <div className="item-actions">
+                    <div className="Button-delete">
+                      <button className="quantity-btn">-</button>
+                      <span>{item.quantity}</span>
+                      <button className="quantity-btn">+</button>
+                    </div>
+                    <div className="image-delete">
+                      <img
+                        className="imaGe"
+                        src="Images/fluent_delete-48-regular.png"
+                        alt=""
+                      />
+                      <p>delete</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+              <div className="item-details">
+                <h3>Name of Product: {item.name}</h3>
+                <p>Buyer's Name: {item.buyer}</p>
+                <p>Brand: {item.brand}</p>
+                <p>Price: ${item.price.toFixed(2)}</p>
+              </div>
+            </>
+          ))}
+        </div>
       </div>
       <div className="cart-total">
-        <p>Total: ${total.toFixed(2)}</p>
-        <button className="checkout-btn" onClick={handleCheckout}>Proceed to Checkout</button>
+        <button className="checkout-btn" onClick={handleCheckout}>
+          Proceed to Checkout{" "}
+          <img src="Images/basil_arrow-right-outline.png" alt="" />
+        </button>
       </div>
-    </div>
+    </>
   );
 };
 
