@@ -77,11 +77,19 @@
   cursor: pointer;
 } 
 
+.header1{
+    display: none;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .cart-item {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .header1{
+    display: flex;
   }
   .cart-item img {
     margin-right: 0;

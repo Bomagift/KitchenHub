@@ -38,6 +38,16 @@
 .shop-now:hover {
   background-color: #0088cc;
 }
+.banner button img{
+  width: 20px;
+  height: 20px;
+}
+
+.banner button {
+  display: flex;
+  justify-content: center;
+}
+
 
 @media (max-width: 768px) {
   .banner {

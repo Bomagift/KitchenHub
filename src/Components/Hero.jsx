@@ -9,7 +9,7 @@ function Hero() {
         "Elevate your culinary space. Embrace innovative kitchenware that defines
         cutting-edge style."
       </p>
-     <button className="shop-now">Shop now</button>
+     <button className="shop-now">Shop now  <img src="Images/basil_arrow-right-outline.png" alt="" /></button>
     </div>
   );
 }

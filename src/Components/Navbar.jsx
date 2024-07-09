@@ -11,7 +11,7 @@ function Navbar() {
                 <div className="menu-item" onClick={() => setCategoriesVisible(!categoriesVisible)}>
                     <li>
                         <a href="/categories"  className="shop">Shop by Categories</a>
-                        <img src="public/Images/Polygon 2.png" alt="" />
+                        <img src="Images/Polygon 2.png" alt="" />
                     </li>
                     
                     {categoriesVisible && (
@@ -63,7 +63,7 @@ function Navbar() {
                     <div className="menu-item" onClick={() => setShopVisible(!shopVisible)}>
                         <li>
                             <a href="/shop">Shop</a>
-                            <img src="public/Images/Polygon 2.png" alt="" />
+                            <img src="Images/Polygon 2.png" alt="" />
                             {shopVisible && (
                                 <div className="dropdown small-dropdown">
                                     <ul>

@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="footer-section company-info">
           <h3>KITCHENHUB</h3>
           <p>© Copyright 2024</p>
-          <div className="payment-methods">
+          <div className="payment-methods1">
             <img
               src="Images/206684_visa_method_card_payment_icon.png"
               alt="Visa"
