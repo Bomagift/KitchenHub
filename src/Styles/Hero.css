@@ -1,7 +1,7 @@
 .banner {
   background-image: url("/Images/Hero Section.png");
   background-size: cover;
-  background-position: center;
+  background-position: left;
   color: #3333;
   padding: 10em 5em;
 }
@@ -38,7 +38,7 @@
 .shop-now:hover {
   background-color: #0088cc;
 }
-.banner button img{
+.banner button img {
   width: 20px;
   height: 20px;
 }
@@ -47,7 +47,6 @@
   display: flex;
   justify-content: center;
 }
-
 
 @media (max-width: 768px) {
   .banner {
