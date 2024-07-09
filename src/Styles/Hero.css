@@ -55,8 +55,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    color: #3333;
     padding: 5em 4em;
   }
   .banner h1 {
