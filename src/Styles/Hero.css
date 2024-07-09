@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("Images/Hero Section.png");
+  background-image: url("public/Images/Hero Section.png");
   background-size: cover;
   background-position: center;
   color: #3333;
@@ -55,6 +55,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #3333;
     padding: 5em 4em;
   }
   .banner h1 {
